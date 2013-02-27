@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+ <!--           <h:outputText value="#{bundle.CreateTeamTitle}"></h:outputText>-->
+        </ui:define>
+          <ui:define name="body">
+              potwierdzone
+        <!--    <h:form >
+                <h:panelGrid columns="2">
+                    <h:outputText value="#{bundle.ViewTeamLabel_id}"/>
+                    <h:outputText value="#{teamController.selected.id}" title="#{bundle.ViewTeamTitle_id}"/>
+                    <h:outputText value="#{bundle.ViewTeamLabel_name}"/>
+                    <h:outputText value="#{teamController.selected.name}" title="#{bundle.ViewTeamTitle_name}"/>
+                    <h:outputText value="#{bundle.ViewTeamLabel_budget}"/>
+                    <h:outputText value="#{teamController.selected.budget}" title="#{bundle.ViewTeamTitle_budget}"/>
+                    <h:outputText value="#{bundle.ViewProductLabel_img}"/>
+                    
+                    <h:graphicImage value="/image?id=#{teamController.selected.id}" />
+                    <h:outputText value="#{bundle.ViewTeamLabel_league}"/>
+                    <h:outputText value="#{teamController.selected.leagueBelong}" title="#{bundle.ViewTeamTitle_league}"/>
+                </h:panelGrid>
+                <ul class="commandButtons">
+                    <h:commandButton actionListener="#{productController.done}" action="/admin/index.xhtml" value="Done!" />
+                </ul>
+            </h:form>-->
+         <h:form>
+         <ul class="commandButtons">
+             <h:commandButton actionListener="#{teamController.done()}" action="/admin/index.xhtml" value="Done!" />
+                </ul>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>
